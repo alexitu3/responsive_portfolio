@@ -1,0 +1,65 @@
+body {
+  width: 960px;
+  margin: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: #777;
+}
+
+ /* I didn't know you could stack all of the header, nav section, etc. into one field.*/
+/*how did they get the vertical text alignment?*/
+header,
+nav,
+section,
+aside,
+footer {
+  
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background: #ebebeb;
+}
+
+/*section is used twice and still works fine? */
+section {
+  /*what does desplay block do?*/
+  display: block;
+  float: left;
+  width: 495px;
+  height: 267px;
+  /*what does the overflow: hidden do especially if there isnt any content?*/
+  overflow: hidden;
+}
+
+aside {
+  display: block;
+  float: right;
+  width: 40%;
+  height: 267px;
+  overflow: hidden;
+}
+
+article {
+  padding: 10px;
+  color: #ebebeb;
+  background: #777;
+}
+/*this is clearing the formating so everything placed below it on the html will not get messed up*/
+
+.clear {
+  clear: both;
+}
+
+/*both the h1 and P are the exact same so it makes sense to put them in one group*/
+h1,
+p {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  color: #777;
+  text-align: center;
+  background: #ebebeb;
+}
